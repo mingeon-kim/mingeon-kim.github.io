@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* margin: 0; */
+        }
+        .bt{
+            width: 100%;
+            padding: 20px;
+            text-align: left;
+            font-size: 15px;
+            border:none;
+            outline: none;
+            background-color: #ccc;
+        }
+        .bt:hover{
+            background-color: #666;
+        }
+        .panel{
+            padding: 0 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2>자주 묻는 질문</h2>
+    <button class="bt">q1.질문</button>
+    <p class="panel">
+        asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    </p>
+
+    <button class="bt">q2.질문</button>
+    <p class="panel">
+        asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    </p>
+
+    <button class="bt">q3.질문</button>
+    <p class="panel">
+        asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+    </p>
+
+
+
+    <script>
+       let acc = document.getElementsByClassName("bt");
+       let i = 0;
+       for(i=0; i<acc.length; i++){
+           acc[i].addEventListener("click",function() {
+
+               let panel = this.nextElementSibling;
+
+            //    console.log(panel);
+
+               if(panel.style.display ==="block"){
+                   panel.style.display = "none";
+               }else{
+                   panel.style.display = "block";
+               }
+           });
+       }
+        
+    </script>
+
+
+</body>
+</html>

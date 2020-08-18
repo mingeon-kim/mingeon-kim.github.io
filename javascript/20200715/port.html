@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 3d</title>
+    <style>
+        .wrapper{
+            width: 100vw;
+            height: 100vh;
+            background: green;
+
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            perspective: 300px;
+        }
+        .card{
+            width: 100px;
+            height: 150px;
+            /* background: yellow; */
+            border-radius: 10px;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            transform-origin: left;
+            transform: rotateY(0deg);
+            transition: 1s;
+
+            position: relative;
+            transform-style: preserve-3d ;
+            /* transform: rotateY(45deg); */
+            /* transform: perspective(300px) rotateY(45deg); */
+        }
+        .wrapper:hover .card{
+            transform: rotateY(-180deg);
+        }
+        .card-side{
+            width: 100%;
+            height: 100%;
+
+            border-radius: 10px;
+            font-size: 3rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .front{
+            z-index: 1;
+            background: red;
+        }
+        .back{
+            background: blue;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <div class="card-side front">앞</div>
+            <div class="card-side back">뒤</div>
+        </div>
+        <!-- <div class="card">2</div>
+        <div class="card">3</div> -->
+    </div>
+        
+</body>
+</html>

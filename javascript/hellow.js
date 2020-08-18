@@ -1,5 +1,10 @@
-var a=3;
-var b=5;
-var c=(a>b)? a:b;
-console.log(c);
-
+let btnobj = document.querySelector("button");
+btnobj.addEventListener("click",function(){
+    document.body.style.backgroundColor="red";
+});
+// document.addEventListener("click",function(){
+//     document.body.style.backgroundColor="blue";
+// });
+// function btnClick(){
+//     document.body.style.backgroundColor="green";
+// }
