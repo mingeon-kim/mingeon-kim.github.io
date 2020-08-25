@@ -1,0 +1,51 @@
+/* reset */
+*{margin: 0;padding: 0;}
+.clearfix::before, .clearfix::after{display: block; color: ''; clear: both;}
+/* 레이아웃 */
+#wrap{
+    width: 1200px;
+    margin: 0  auto;
+}
+#side{
+    width: 300px;
+    height: 850px;
+    float: left;
+    background: #ccc;
+}
+#content{
+    width: 900px;
+    height: 850px;
+    float: left;
+    background: #ddd;
+}
+/* header */
+#side .logo{
+    width: 300px;
+    height: 150px;
+    background: #999;
+}
+#side .nav{
+    width: 300px;
+    height: 700px;
+    background: #888;
+}
+
+/* banner */
+#banner{
+    width: 900px;
+    height: 450px;
+    background: #777;
+}
+
+/* contents */
+#contents{}
+#contents > div{ float: left; width: 33.33333%; height: 300px;}
+#contents > .cont1{background:  #666;}
+#contents > .cont2{background:  #555;}
+#contents > .cont3{background:  #444;}
+
+/* footer */
+#footer div{float: left;}
+#footer .foot1{width: 200px; height: 100px; background: #333;}
+#footer .foot2{width: 700px; height: 50px; background: #222;}
+#footer .foot3{width: 700px; height: 50px; background: #111;}

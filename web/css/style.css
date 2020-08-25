@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::before, .clearfix::after{display: block ; content: '';clear: both;}
+/* 초기화 */
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 레이아웃 */
+
+
+#header .logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background: #888;
+}
+#header .nav{
+    float: left;
+    width: 950px;
+    height: 100px;
+    background: #777;
+}
+/* 헤더 */
+
+#banner{
+    height: 300px;
+    background: #666;
+}
+/* 베너 */
+
+#contents > div{
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+#contents > .cont1{
+    background: #555;
+}
+#contents > .cont2{
+    background: #444;
+}
+#contents > .cont3{
+    background: #333;
+}
+/* 콘텐츠 */
+
+#footer div{
+    float: left;
+    height: 100px;
+}
+#footer .foot1{
+    width: 200px;
+    background: #222;
+}
+#footer .foot2{
+    width: 800px;
+    background: #333;
+}
+#footer .foot3{
+    width: 200px;    
+    background: #444;
+}
+/* 푸터 */

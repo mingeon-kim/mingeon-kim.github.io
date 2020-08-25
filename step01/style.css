@@ -1,0 +1,79 @@
+body {
+  /* background: greenyellow; */
+  height: 1000vw;
+}
+
+#wrapper {
+  background-image: url(img/images.jpg);
+  background-size: cover;
+  position: fixed; /*스크롤은 되지만, 고정이 되어 있음. */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  perspective: 1000px; /*원근법을 만든다.*/
+}
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+.stage {
+  /* default 상태는 꽉 찬 상태로 만든다. 그런뒤 스크롤을 이동하여 -값*/
+  width: 100vw;
+  height: 100vh;
+  transform: translateZ(-500vw);
+  transform-style: preserve-3d;
+}
+.card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(255, 255, 255, 0.8); */
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 100vh;
+}
+.card-title {
+  font-size: 5rem;
+}
+.card-left {
+  width: 1000vw;
+  transform: rotateY(90deg) translateZ(-500vw);
+}
+.card-right {
+  width: 1000vw;
+  transform: rotateY(90deg) translateZ(-400vw);
+}
+.card-box-1 {
+  transform: translateZ(500vw);
+  
+}
+.card-box-2 {
+  transform: translateZ(300vw);
+}
+.card-box-3 {
+  transform: translateZ(100vw);
+}
+.card-box-4 {
+  transform: translateZ(-100vw);
+}
+.card-box-5 {
+  transform: translateZ(-300vw);
+}
+.card-content img{
+  height: 100%;
+}
+.card-box-3 .card-content img{
+  position: absolute;
+  bottom: -350px;
+  right: 200px;
+}
