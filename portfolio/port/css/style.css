@@ -110,7 +110,7 @@ body{
 
 .portfolio .P{
     font-size: 80px;
-    margin: 50px 0 auto;
+    margin: 50px  auto;
     padding-top: 50px;
     text-align: center;
     background: linear-gradient(to right bottom,#fa1ea8 30%,#5072f7 70%);
@@ -136,7 +136,7 @@ body{
 }
 .container img{
     width: 280px;   
-    margin: 20px auto;
+    margin: 20px 0;
 }
 
 
@@ -262,7 +262,7 @@ body{
     }
 
     .container{
-        width: 768px;
+        width: 70%;
         height: 1100px;
         margin: 0 auto;
         text-align: center;
@@ -278,7 +278,7 @@ body{
 /* pc 사이즈 */
 @media all and (min-width:1024px){
     .header{
-        width: 1024px;
+        width: 1004px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -293,7 +293,7 @@ body{
         display: block !important;
     }
     .container{
-        width: 1024px;
+        width: 1004px;
         height: 700px;
         margin: 0  auto;
         align-items: center;

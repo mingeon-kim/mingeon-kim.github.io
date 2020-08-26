@@ -2,12 +2,37 @@
     margin: 0;
     padding: 0;
 }
-#back{
-    width: 100%;
+/* #wrap{
+    width: 100vw;
     height: 80vh;
-    z-index: -1;
-    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+body{
+    background:url("U1Cp4Hm.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .con{
-    margin: auto;
+    
+}
+#view-clock{
+    font-size: 100px;
+}
+#view-user > input{
+    /* width: 100px; */
+    width: 20vw;
+    height: 5vh;
+
+}
+#view-user > input >text{
+    font-size: 500%;
 }
