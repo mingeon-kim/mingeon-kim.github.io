@@ -59,7 +59,6 @@ a:hover{color:skyblue}
 
 /* 컨텐츠 */
 .container{
-    background-color: #333333;
     position: fixed;
     top: 0;
     left: 0;
@@ -71,7 +70,7 @@ a:hover{color:skyblue}
     /* 3d 회전 */
     transform-origin : right center;
     transform:rotateY(-3deg);
-    }
+}
 .off{
     transform-origin: right center;
     transform: rotateY(0deg);
@@ -87,13 +86,14 @@ a:hover{color:skyblue}
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0;
     display: grid;
     grid-template-columns: repeat(4,1fr);   
     grid-template-rows: repeat(4,1fr);
     gap: 0 0px;
 }
 .KF{
+    background-color: #333333;
+    opacity: 3;
     font-size: 50px;
 }
 .container .KF p{
@@ -164,7 +164,11 @@ a:hover{color:skyblue}
 }
 
 
+.JF{
+    background-color: #333333;
+    opacity: 0;
 
+}
 .container .JF p {
     transform: rotateY(360deg);
     transition: 1s
@@ -214,7 +218,11 @@ a:hover{color:skyblue}
 
 
 
+.CF{
+    background-color: #333333;
+    opacity: 0;
 
+}
 
 .container .CF p{
     transform: rotateY(360deg);
