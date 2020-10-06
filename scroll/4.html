@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 300vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        hr{
+            margin-top: 300px;
+            width: 100%;
+            border: 3px solid black;
+        }
+        img{
+            width: 300px;
+            visibility: hidden;
+            
+            /* animation: imgUp 1s; */
+        }
+        .img-up{
+            animation: imgUp 1s;
+        }
+        @keyframes imgUp{
+            0%{
+                visibility: visible;
+
+                transform: translateY(80%);
+            }100%{
+                visibility: visible;
+                
+                transform: translateY(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>scroll down</h1>
+    <br>
+    <div>
+        <p>
+            console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)
+            console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)
+            console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)
+            console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)
+            console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)console.log(scrolled)
+        </p>
+        <hr class="HR">
+    </div>
+    <img src="../port2/img/9.jpg">
+
+
+    <script>
+        (function(){
+            // const hrElem = document.querySelector(".HR");
+            const hrY = document.querySelector(".HR").offsetTop;
+
+            const emgElem = document.querySelector("img");
+            // console.log(hrY)
+            // const scrollIndex = document
+            
+            function hrLine(){
+                let pasY = window.pageYOffset;
+                if( pasY >= (hrY-300)){
+                    // imgElem.classList.add("-up");
+                    emgElem.className="img-up";
+                }
+                // else{
+                //     imgElem.className("-up")
+                // }
+            } 
+            window.addEventListener("scroll",hrLine);
+        })();
+    </script>
+</body>
+</html>

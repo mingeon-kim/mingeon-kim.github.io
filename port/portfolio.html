@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/70a03596d4.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <style>
+        .banner {
+          height: 35vh;
+          background-image: url('../images/aaaa.jpg');
+        }
+        .portfolio {
+            background: none;
+        }
+        .big{
+            display: none;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding-top: 80px;
+            position: fixed;
+            top: 0%;
+            left: 0;
+        }
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            cursor: pointer;
+        }
+        @keyframes zoom {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .big-content {
+				margin: auto;
+				display: block;
+				width: auto;
+				max-width: 700px;
+			}
+        .big-content {
+            animation: zoom 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--  -->
+        <div class="logo">
+            <a href="index.html">KIM MINGEON</a>
+        </div>
+        <!--  -->
+        <nav class="menu">
+            <ul class="toggle">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html" style="background:linear-gradient(to right,#fa1ea8,#5072f7);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;">
+                    PORTFOLIO</a></li>
+                <li><a href="contect.html">CONTACT</a></li>
+            </ul>
+            <!--  -->
+            <button type="button" class="actBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!--  -->
+        </nav>      
+        <!--  -->
+    </header>
+    
+    <section class="banner" style='background-image: url(images/aaaa.jpg);'>
+        <p>WebDesigner 김민건 </p>
+    </section>
+    <!--  -->
+
+    <section class="portfolio">
+        <p style="font-size: 50px;
+        margin: 30px auto;
+        text-align: center;">PORTFOLIO</p>
+        <p style="
+        font-size: 25px;
+        margin: 15px auto;
+        text-align: center;
+        background-color: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">최근 작업</p>
+        <div class="container">
+            <img src="./images/a1.jpg" height="180px" class="scale">
+            <img src="./images/a2.jpg" height="270px" class="scale">
+            <img src="./images/b3.jpg" height="100px" class="scale">
+            <img src="./images/b1.jpg" height="120px" class="scale">
+            <img src="./images/b2.jpg" height="250px" class="scale">
+            <img src="./images/a3.jpg" class="scale">
+            <img src="./images/c3.jpg" height="150px" class="scale">
+            <img src="./images/c2.jpg" height="100px" class="scale">
+            <img src="./images/c1.jpg" class="scale">
+        </div>
+    </section>
+  
+    <div class="big">
+        <span class="close">&times;</span>
+        <img class="big-content" />
+    </div>
+    <!--  -->
+    <section class="footer">
+        <P>E-mail. 000@gmail.com</P>
+        <p>Copyright ⓒ 2020 by 000. All Rights Reserved</p>
+    </section>
+    <script src="./script.js/list.js" defer>
+    </script>
+    <script>
+        let big = document.querySelector('.big');
+        let imgItems = document.querySelector('.container');
+        imgItems.addEventListener('click',function(e){
+            big.style.display='block';
+            big.children[1].src = e.target.getAttribute('src');
+            console.log(imgItems)
+            console.log(big)
+        });
+        let closeBtn = big.children[0];
+        closeBtn.addEventListener('click',function(e){
+            big.style.display ='none';
+        });
+    </script>
+</body>
+</html> 

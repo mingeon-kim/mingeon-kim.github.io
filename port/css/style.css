@@ -1,0 +1,561 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Serif KR', serif;
+}
+/* .header{
+    margin-right: 12px;
+} */
+.header{
+    overflow: hidden;
+    margin: 3px ;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+.logo a{
+    background:linear-gradient(to right,#fa1ea8,#5072f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight:30px;
+}
+
+.menu .actBtn{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    border: none;
+    background:none;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 30px;
+    outline: none;
+    display: none;
+}
+
+
+
+/* 헤더끝 */
+/* 배너 */
+
+.banner{
+    background-image: url('../images/aaaa.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    font-size: 12vw;
+    letter-spacing: 0.15em;
+    background:linear-gradient(to right,#5072f7,#fa1ea8);
+    -webkit-background-clip: text;s
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+.banner p{
+    padding: 5px 0;
+    font-size: 4vw;
+    letter-spacing: 0.2em;
+    background:linear-gradient(to right,#5072f7,#fa1ea8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* 배너끝 */
+/* 워크 */
+
+.work{
+    width: 70%;
+    margin: 0 auto;
+}
+.work .ul>li>div{
+    
+    border-radius: 50%;
+    background:linear-gradient(to right,#5072f7,#fa1ea8);
+    color: white;
+    width: 5em;
+    margin: 30px auto;
+    height: 5em;
+    text-align: center;
+    line-height: 5em; 
+}
+
+.work .ul li h3{
+    text-align: center;
+    font-size: 130%;
+}
+.work .ul li p{
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* 워크끝 */
+/* 포트폴리오 */
+
+.portfolio{
+    margin: 0  auto;
+    background-color: #f0f0f0;
+}
+
+.portfolio .P{
+    font-size: 80px;
+    margin: 50px  auto;
+    padding-top: 50px;
+    text-align: center;
+    background: linear-gradient(to right bottom,#fa1ea8 30%,#5072f7 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.portfolio .last{
+    padding: 5px;
+    font-size: 20px;
+    margin: 15px auto;
+    text-align: center;
+    background: linear-gradient(to right bottom,#fa1ea8 30%,#5072f7 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+.container img{
+    width: 280px;   
+    margin: 20px 0;
+}
+
+
+
+
+/* 포트폴리오 끝 */
+
+/* 콘텐츠 */
+
+.sub_title{
+    font-size: 80px;
+    margin: 50px auto;
+    text-align: center;
+    background: linear-gradient(to right bottom,#fa1ea8 30%,#5072f7 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact .text{
+    text-align: center;
+    width: 350px;
+    margin: 20px auto;
+}
+.contact .text P{
+    margin-top: 5px;
+}
+
+
+
+  .contact .sns{
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .contact .sns >a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(190, 190, 190);
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+
+    position: relative;
+    overflow: hidden;
+  }
+    .contact > .sns >  a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-color: blue;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+
+  .contact > .sns > a:hover:before {
+    height: 100%;
+  }
+  .contact > .sns >  a .icon{
+    position: relative;
+  }
+  .contact > .sns > a:nth-child(1):before {
+    background-color: #3b5999;
+  }
+  .contact > .sns > a:nth-child(2):before {
+    background-color: #55acee;
+  }
+  .contact > .sns > a:nth-child(3):before {
+    background-color: #dd4b39;
+  }
+  .contact > .sns > a:nth-child(4):before {
+    background-color: #0077b5;
+  }
+
+/*  */
+/*  */
+/* 콘텐츠 끝 */
+/*  */
+/*  */
+/* 푸터 */
+.footer{
+    height: 50px;
+    background-color: #535353;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.footer p{
+    color: #929292;
+    
+}
+
+
+/* 푸터 끝 */
+
+
+
+/* 모바일 사이즈 */
+@media all and (max-width:768px) {
+   
+  
+    .menu ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        display: none;
+    }
+    .menu ul li{
+        width: 100%;
+        text-align: right;
+        padding: 10pxpx;
+    }
+    .menu .actBtn{
+        display: block;
+    }
+    .menu ul li:hover{
+        background-color: rgb(235, 141, 185);
+        border-radius: 5px;
+    }
+       /* 슬라이드 */
+   .work {
+    width: 300px;
+    margin: 30px auto;  
+    overflow: hidden;
+  }
+  .work > .ul{
+    width: 900px;
+    height: 300px;
+  
+    position: relative;
+    left: 0;
+    transition: 1s;
+  }
+  .work > input[id="tab1"]:checked ~ .ul{
+    left: 0px;
+  }
+  .work > input[id="tab2"]:checked ~ .ul{
+    left: -300px;
+  }
+  .work > input[id="tab3"]:checked ~ .ul{
+    left: -600px;
+  }
+  .work > .ul > .item {  
+    text-align: center;
+    width: 300px;
+    float: left;
+  }
+  
+  .work > .ul > .item  {
+    margin-top: 20px;
+  }
+  
+  .work > .tabBtn{
+    text-align: center;
+  }
+  .work .tabBtn  label{
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-color: #222;
+  }
+  .work > input[name="tab"]{
+    display: none;
+  }
+  .work > input[id="tab1"]:checked ~ .tabBtn label[for="tab1"],
+  .work > input[id="tab2"]:checked ~ .tabBtn label[for="tab2"],
+  .work > input[id="tab3"]:checked ~ .tabBtn label[for="tab3"]
+  {
+    background-color: rgb(228, 63, 63);
+    border-radius: 3px;
+  }
+
+    /* 슬라이드 */
+
+    
+    /* list.js */
+    .menu .toggle.active{
+        display: flex;
+    }
+    /* list.js */
+ 
+    .container{
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .container img{
+        width: 200px;   
+        margin: 20px 0;
+    }
+    .container img:nth-child(4){
+        display: none;
+    }
+    .container img:nth-child(5){
+        display: none;
+    }
+    .container img:nth-child(6){
+        display: none;
+    }
+    .container img:nth-child(7){
+        display: none;
+    }
+    .container img:nth-child(8){
+        display: none;
+    }
+    .container img:nth-child(9){
+        display: none;
+    }
+
+
+    .contact .text{
+        font-size: 13px;
+    }
+    .contact a{
+        margin: 0 5px;
+    }
+    .contact .text  {
+        display: none;
+    }
+    .scale:hover {
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        transition: all 0.3s ease-in-out
+      }
+      .map{
+        width: 300px;
+        height: 250px;
+      }
+      .big-content {
+				margin: auto;
+				display: block;
+				width: auto;
+				max-width: 500px;
+			}
+
+
+    
+    
+}
+/* 테블릿사이즈 */
+@media all and (min-width:768px){
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        /* margin: 0 auto; */
+        overflow: hidden;
+    }
+  
+    .logo a{
+        font-size: 30px;
+        padding-top: 10px ;
+    }
+    .menu a{
+        display: block;
+        color: black;
+        padding: 30px 20px 20px 20px;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .banner h1{
+        font-size: 100px;
+    }
+    .banner p{
+        font-size: 30px;
+        
+    }
+   /* 슬라이드 */
+   .work {
+    width: 300px;
+    margin: 30px auto;  
+    overflow: hidden;
+  }
+  .work > .ul{
+    width: 900px;
+    height: 300px;
+  
+    position: relative;
+    left: 0;
+    transition: 1s;
+  }
+  .work > input[id="tab1"]:checked ~ .ul{
+    left: 0px;
+  }
+  .work > input[id="tab2"]:checked ~ .ul{
+    left: -300px;
+  }
+  .work > input[id="tab3"]:checked ~ .ul{
+    left: -600px;
+  }
+  .work > .ul > .item {  
+    text-align: center;
+    width: 300px;
+    float: left;
+  }
+  
+  .work > .ul > .item  {
+    margin-top: 20px;
+  }
+  
+  .work > .tabBtn{
+    text-align: center;
+  }
+  .work .tabBtn  label{
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background-color: #222;
+  }
+  .work > input[name="tab"]{
+    display: none;
+  }
+  .work > input[id="tab1"]:checked ~ .tabBtn label[for="tab1"],
+  .work > input[id="tab2"]:checked ~ .tabBtn label[for="tab2"],
+  .work > input[id="tab3"]:checked ~ .tabBtn label[for="tab3"]
+  {
+    background-color: rgb(228, 63, 63);
+    border-radius: 3px;
+  }
+
+    /* 슬라이드 */
+
+   
+    .container{
+        width: 70%;
+        height: 1100px;
+        margin: 0 auto;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .scale:hover {
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+        transition: all 0.3s ease-in-out
+      }
+
+
+
+}
+/* pc 사이즈 */
+@media all and (min-width:1024px){
+    .header{
+        width: 1004px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    header .logo{
+        height: 80px;
+    }
+  
+    .logo a{
+        padding-top: 25px;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+    .work {
+      width: 90%;
+      margin: 30px auto;
+      overflow: auto;
+    }
+    .work .ul{
+      position: static;
+      margin: 0 auto;
+    }
+    .work .tabBtn{
+      display: none;
+    }
+    .container{
+        width: 1004px;
+        height: 700px;
+        margin: 0  auto;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact ul{
+        margin: 100px ;
+    }
+    .scale:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transition: all 0.3s ease-in-out
+      }
+      
+
+}

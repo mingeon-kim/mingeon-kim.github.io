@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #head{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: coral;
+            text-align: center;
+        }
+        #head h1{
+            padding: 20px 0;
+        }
+        #head>.progress-bar{
+            width: 100%;
+            height: 20px;
+            background: cornflowerblue;
+        }
+        #head .fill-bars{
+            width: 0%;
+            height: 20px;
+            background-color:black;
+        }
+        #content{
+            margin: 100px auto;
+            width: 80%;
+            height: 2000px;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <h1>scroll angbahj</h1>
+        <div class="progress-bar">
+            <div class="fill-bars"></div>
+        </div>
+    </div>
+    <div id="content">
+        코로나19 확진자 44명이 발생한 부산항 정박 러시아 선박과 관련된 지역감염자가 경남에서도 나왔다. 이 선박과 관련된 지역감염자는 부산 10명을 포함해 11명으로 늘어났다.
+        경남도는 “29일 경남에서 코로나19 확진자가 2명 추가 발생해, 전체 확진자가 156명으로 늘어났다. 155번째 확진자는 김해시에 사는 60대 남성으로 부산항에 정박한 러시아 선박의 선원에게서 감염된 것으로 추정된다. 156번째 확진자는 양산시에 사는 60대 남성으로 이라크에서 감염돼 들어왔다. 이들은 마산의료원에 입원해 치료 중”이라고 이날 밝혔다. 경남에서 지역감염으로 코로나19 확진자가 발생한 것은 지난달 9일 이후 50일 만이다.
+        경남 155번째 확진자는 부산 선박수리업체 직원으로, 지난 23일 러시아 원양어선 페트로1호(7773t) 수리에 참여한 것으로 드러났다. 페트로1호는 지난 8일 오후 1시30분께 부산항 북항 신선대부두에 입항해 수리를 받고 이달 말 출항할 예정이었다. 하지만 페트로1호에 올라가 작업을 했던 선박수리공들이 잇따라 코로나19에 감염되자, 국립부산검역소는 페트로1호 선원 94명 모두를 검사했는데, 29일 현재까지 44명이 코로나19 양성 판정을 받았다. 경남 155번째 확진자 역시 페트로1호 수리작업 과정에서 러시아 선원과 접촉해서 코로나19에 감염된 것으로 추정된다.
+        경남 155번째 확진자는 페트로1호 수리작업 이후 자가용을 운전해 집과 회사를 오간 것 외에는 외출하지 않은 것으로 드러났다. 이 확진자의 가족은 검사 결과 음성 판정을 받았다.
+        29일 현재 경남 코로나19 환자 156명 가운데 144명은 완치 판정을 받아서 퇴원했고, 나머지 12명과 인천공항 검역과정에서 확진 판정을 받은 1명 등 13명은 감염병 전담병원인 마산의료원에 입원해 치료를 받고 있다.
+    </div>
+
+
+    <script>
+        (function(){
+            function persent(){
+                const fillElem = document.querySelector(".fill-bars");
+                // y스크롤 퍼센트 구하기
+                let persentScroll = window.pageYOffset;
+                let bodyHeight = document.documentElement.getBoundingClientRect().height- window.innerHeight;
+                let scrolled = (persentScroll / bodyHeight) * 100;
+                fillElem.style.width = scrolled + "%";
+                // console.log(scrolled);
+            }
+            window.addEventListener("scroll", persent);
+        })();
+    </script>
+</body>
+</html>

@@ -93,14 +93,15 @@ a:hover{color:skyblue}
     grid-template-rows: repeat(4,1fr);
     gap: 0 0px;
 }
-
+.KF{
+    font-size: 50px;
+}
 .container .KF p{
     transform: rotateY(360deg);
     transition: 1s
 }
 .container .KF p:nth-child(1){
     grid-column: 1 / span  2;
-    font-size: 100px;
     text-align: center;
     margin-top: 80px;
     color: #ffffff;
@@ -110,7 +111,6 @@ a:hover{color:skyblue}
     background-size: cover;
 }
 .container .KF p:nth-child(4){
-    font-size: 70px;
     /* text-align: center; */
     margin-top: 40px;
     margin-left: 50px;
@@ -135,7 +135,6 @@ a:hover{color:skyblue}
     height: 100%; */
 }
 .container .KF p:nth-child(9){
-    font-size: 70px;
     text-align: center;
     margin-top: 100px;
     /* margin-left: 50px; */
@@ -145,11 +144,9 @@ a:hover{color:skyblue}
     background:url(./img/5.jpg);
     background-size: cover;
 }
-.container .KF p:nth-child(11){
-    font-size: 70px;
-    text-align: center;
+.container .KF p:nth-child(12){
     margin-top: 100px;
-    /* margin-left: 50px; */
+    text-align: center;
     color: #ffffff;
 }
 
